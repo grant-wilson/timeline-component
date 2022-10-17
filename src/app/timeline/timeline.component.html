@@ -1,0 +1,11 @@
+<ol class="border-l-2 border-blue-300 pl-4 ml-4">
+  <li *ngFor="let event of data" class="mb-4 pt-2 pb-2 relative">
+    <div
+      class="absolute w-2 h-2 bg-blue-400 rounded"
+      style="left: -1.3rem; top: 1rem"
+    ></div>
+    <div class="text-gray-400">{{ event.date | date: "fullDate" }}</div>
+    <h2 class="text-lg font-bold">{{ event.title }}</h2>
+    <div>{{ event.description }}</div>
+  </li>
+</ol>
